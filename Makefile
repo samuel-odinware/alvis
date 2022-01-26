@@ -152,12 +152,11 @@ docs-uml: ## Generate UML documentation
 
 .PHONY: docs-serve
 docs-serve: docs ## Open documentation locally
-	@ eval "sleep 3; $(OPEN) http://localhost:8000" &
 	@ pdm run mkdocs serve
 
 .PHONY: docs-deploy
 docs-deploy: ## Deploy documentation to gh-pages
-	@ mkdocs gh-deploy
+	@ pdm run mkdocs gh-deploy
 
 # CLEANUP #####################################################################
 

@@ -1,0 +1,48 @@
+site_name: Alvis
+site_description: DataTalks.Club Data Engineering boot camp
+site_author: Samuel Moore
+
+site_url: https://samuel-odinware.github.io/alvis
+repo_url: https://github.com/samuel-odinware/alvis
+edit_uri: https://github.com/samuel-odinware/alvis/edit/gh-pages/docs
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: green
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: green
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+markdown_extensions:
+  - admonition
+  - codehilite
+
+plugins:
+- search
+- mkdocstrings:
+    default_handler: python
+    handlers:
+      python:
+        rendering:
+          show_signature_annotations: true
+          show_source: true
+        selection:
+          docstring_style: google
+
+nav:
+  - Home: index.md
+  - Homework:
+    - Week 01: homework/week-01.md
+  - About:
+    - Release Notes: about/changelog.md

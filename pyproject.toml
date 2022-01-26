@@ -43,10 +43,10 @@ formatting = [
   "black[jupyter]>=21.12b0",
 ]
 linting = [
-  "darglint>=1.8.1",
-  "pydocstyle[toml]>=6.1.1",
-  "pylint>=2.12.2",
-  "pylint-pydantic>=0.1.4",
+    "darglint>=1.8.1",
+    "pydocstyle[toml]>=6.1.1",
+    "pylint @ git+https://github.com/PyCQA/pylint.git",
+    "pylint-pydantic>=0.1.4",
 ]
 security = [
   "bandit>=1.7.1",

@@ -42,6 +42,8 @@
         "pgadmin",
         "pgdatabase",
         "pydantic",
+        "pymdownx",
+        "superfences",
         "tpep",
         "tqdm",
         "typer",

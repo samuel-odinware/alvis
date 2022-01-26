@@ -1,0 +1,20 @@
+classDiagram
+  class alvis {
+  }
+  class cli {
+  }
+  class config {
+  }
+  class db_config {
+  }
+  class data_ingest {
+  }
+  class downloader {
+  }
+  class ingest {
+  }
+  class playground {
+  }
+  cli --> ingest
+  config --> db_config
+  ingest --> downloader

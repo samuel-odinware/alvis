@@ -189,6 +189,12 @@ requires_python = ">=3.5"
 summary = "Decorators for Humans"
 
 [[package]]
+name = "dill"
+version = "0.3.4"
+requires_python = ">=2.7, !=3.0.*"
+summary = "serialize all of python"
+
+[[package]]
 name = "dparse"
 version = "0.5.1"
 requires_python = ">=3.5"
@@ -608,8 +614,9 @@ summary = "Pygments is a syntax highlighting package written in Python."
 
 [[package]]
 name = "pylint"
-version = "2.12.2"
-requires_python = ">=3.6.2"
+version = "2.13.0.dev0"
+git = "https://github.com/PyCQA/pylint.git"
+revision = "44ad84a4332dfb89e810106fef2616a0bc7e47e4"
 summary = "python code static checker"
 dependencies = [
     "astroid<2.10,>=2.9.0",
@@ -945,7 +952,7 @@ summary = "Backport of pathlib-compatible object wrapper for zip files"
 
 [metadata]
 lock_version = "3.1"
-content_hash = "sha256:d5bdb560646c14958533e75805f6d80baa4eb3c6de3f504efeba5a21167a2680"
+content_hash = "sha256:4abf57e35c9c37f1ec030247a78c3fc24f38ca2420aaa606e167237fd403bc47"
 
 [metadata.files]
 "anyio 3.5.0" = [
@@ -1071,6 +1078,10 @@ content_hash = "sha256:d5bdb560646c14958533e75805f6d80baa4eb3c6de3f504efeba5a211
 "decorator 5.1.1" = [
     {file = "decorator-5.1.1-py3-none-any.whl", hash = "sha256:b8c3f85900b9dc423225913c5aace94729fe1fa9763b38939a95226f02d37186"},
     {file = "decorator-5.1.1.tar.gz", hash = "sha256:637996211036b6385ef91435e4fae22989472f9d571faba8927ba8253acbc330"},
+]
+"dill 0.3.4" = [
+    {file = "dill-0.3.4-py2.py3-none-any.whl", hash = "sha256:7e40e4a70304fd9ceab3535d36e58791d9c4a776b38ec7f7ec9afc8d3dca4d4f"},
+    {file = "dill-0.3.4.zip", hash = "sha256:9f9734205146b2b353ab3fec9af0070237b6ddae78452af83d2fca84d739e675"},
 ]
 "dparse 0.5.1" = [
     {file = "dparse-0.5.1-py3-none-any.whl", hash = "sha256:e953a25e44ebb60a5c6efc2add4420c177f1d8404509da88da9729202f306994"},
@@ -1499,10 +1510,6 @@ content_hash = "sha256:d5bdb560646c14958533e75805f6d80baa4eb3c6de3f504efeba5a211
 "pygments 2.11.2" = [
     {file = "Pygments-2.11.2-py3-none-any.whl", hash = "sha256:44238f1b60a76d78fc8ca0528ee429702aae011c265fe6a8dd8b63049ae41c65"},
     {file = "Pygments-2.11.2.tar.gz", hash = "sha256:4e426f72023d88d03b2fa258de560726ce890ff3b630f88c21cbb8b2503b8c6a"},
-]
-"pylint 2.12.2" = [
-    {file = "pylint-2.12.2-py3-none-any.whl", hash = "sha256:daabda3f7ed9d1c60f52d563b1b854632fd90035bcf01443e234d3dc794e3b74"},
-    {file = "pylint-2.12.2.tar.gz", hash = "sha256:9d945a73640e1fec07ee34b42f5669b770c759acd536ec7b16d7e4b87a9c9ff9"},
 ]
 "pylint-pydantic 0.1.4" = [
     {file = "pylint_pydantic-0.1.4-py3-none-any.whl", hash = "sha256:d42d9e95255b2f70f82a674cec159f417263363c7da0e28998964d83d7330c72"},

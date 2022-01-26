@@ -12,14 +12,14 @@ theme:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: blue
-      accent: green
+      accent: amber
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: blue
-      accent: green
+      accent: amber
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
@@ -27,6 +27,8 @@ theme:
 markdown_extensions:
   - admonition
   - codehilite
+  - pymdownx.details
+  - pymdownx.superfences
 
 plugins:
 - search
